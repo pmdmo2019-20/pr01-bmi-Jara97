@@ -11,7 +11,7 @@ public class BmiCalculator {
      * @return The body mass index (BMI)
      */
     public float calculateBmi(float weightInKgs, float heightInMeters) {
-        // TODO
+        return 1;
     }
 
 
@@ -20,7 +20,7 @@ public class BmiCalculator {
      * @return A BmiClasification enum with the clasification of BMI
      */
     public BmiClasification getBmiClasification(float bmi) {
-        // TODO
+        return BmiClasification.LOW_WEIGHT;
     }
 
     public enum BmiClasification {

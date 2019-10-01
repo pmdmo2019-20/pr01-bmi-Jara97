@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Body Mass Index</string>
+    <string name="lblWeight">Weight</string>
+    <string name="lblHeight">Height</string>
+    <string name="kg">(kg)</string>
+    <string name="m">(m)</string>
+    <string name="calculate">Calculate BMI</string>
+    <string name="reset">Reset</string>
+
     <!-- TODO -->
 </resources>
