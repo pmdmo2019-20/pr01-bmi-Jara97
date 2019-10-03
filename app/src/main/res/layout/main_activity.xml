@@ -7,6 +7,7 @@
     android:background="@drawable/main_activity_background"
     android:orientation="vertical"
     android:padding="16dp"
+    android:id="@+id/viewId"
     tools:context=".ui.main.MainActivity">
 
     <!-- TODO -->
@@ -14,7 +15,7 @@
         android:id="@+id/lblWeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lblHeight" />
+        android:text="@string/lblWeight" />
 
     <EditText
         android:id="@+id/txtWeight"

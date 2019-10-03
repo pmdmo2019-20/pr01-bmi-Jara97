@@ -103,16 +103,16 @@ public class MainActivityTest {
     @Test
     public void should_btnCalculate_show_bmi() {
         onView(withId(R.id.txtWeight))
-            .perform(typeText("100"), closeSoftKeyboard());
+                .perform(typeText("100"), closeSoftKeyboard());
         onView(withId(R.id.txtHeight))
-            .perform(typeText("2"), closeSoftKeyboard());
+                .perform(typeText("2"), closeSoftKeyboard());
         onView(withId(R.id.btnCalculate)).perform(click());
 
         onView(withId(R.id.lblResult))
-            .check(matches(withText(activityRule.getActivity().getString(R.string.main_bmi, 25f,
-                activityRule.getActivity().getString(R.string.main_overweight)))));
+                .check(matches(withText(activityRule.getActivity().getString(R.string.main_bmi, 25f,
+                        activityRule.getActivity().getString(R.string.main_overweight)))));
         onView(withId(R.id.imgBmi))
-            .check(matches(new DrawableMatcher(R.drawable.overweight)));
+                .check(matches(new DrawableMatcher(R.drawable.overweight)));
     }
 
     // Focus flow

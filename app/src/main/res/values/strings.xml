@@ -6,6 +6,10 @@
     <string name="m">(m)</string>
     <string name="calculate">Calculate BMI</string>
     <string name="reset">Reset</string>
+    <string name="main_invalid_weight">invalid weight</string>
+    <string name="main_invalid_height">invalid height</string>
+    <string name="main_bmi">Normal weight</string>
+    <string name="main_overweight">Overweight</string>
 
     <!-- TODO -->
 </resources>
