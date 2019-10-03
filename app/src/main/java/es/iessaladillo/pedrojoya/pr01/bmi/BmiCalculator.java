@@ -28,19 +28,19 @@ public class BmiCalculator {
         if(bmi<18.5){
             return BmiClasification.LOW_WEIGHT;
         }
-        if(bmi>=18.5 && bmi<=24.99){
+        else if(bmi>=18.5 && bmi<=24.99){
             return BmiClasification.NORMAL_WEIGHT;
         }
-        if(bmi>24.99 && bmi<=29.99){
+        else if(bmi>24.99 && bmi<=29.99){
             return BmiClasification.OVERWWEIGHT;
         }
-        if(bmi>29.99 && bmi<=34.99f){
+        else if(bmi>29.99 && bmi<=34.99f){
             return BmiClasification.OBESITY_GRADE_1;
         }
-        if(bmi>34.99 && bmi<40){
+        else if(bmi>34.99 && bmi<40){
             return BmiClasification.OBESITY_GRADE_2;
         }
-        else{
+         else{
             return BmiClasification.OBESITY_GRADE_3;
         }
     }

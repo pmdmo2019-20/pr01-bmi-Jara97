@@ -1,5 +1,6 @@
 package es.iessaladillo.pedrojoya.pr01.ui.main;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -64,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         imgBmi.setImageResource(R.drawable.bmi);
     }
 
+    @SuppressLint("StringFormatMatches")
     private void  calculate(){
         float bmi;
         String type;
@@ -75,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
            bmi=calculator.calculateBmi(weight,height);
            type=calculator.getBmiClasification(Float.valueOf(bmi)).toString();
            type2=translate(type);
-           lblResult.setText(String.format("BMI: %s %s",bmi,type2));
+           lblResult.setText(String.format(getString(R.string.main_bmi),bmi,type2));
            setImage(bmi);
        }
         if(!validarW(txtWeight.getText().toString())){
@@ -110,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean validarW(String weight){
-        if(weight.equals("")||Integer.parseInt(weight)<=0){
+        if(weight.equals("")||weight.equals(".")||Integer.parseInt(weight)<=0){
             return false;
         }
         else{
@@ -120,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean validarH(String height){
-        if(height.equals("")||Float.parseFloat(height)<=0){
+        if(height.equals("")||height.equals(".")||Float.parseFloat(height)<=0){
             return false;
         }
         else{
@@ -132,22 +134,22 @@ public class MainActivity extends AppCompatActivity {
 
     public String translate(String s){
         if(s.equals("LOW_WEIGHT")){
-            return "Low weight";
+            return getString(R.string.main_low_weight);
         }
         if(s.equals("NORMAL_WEIGHT")){
-            return "Normal weight";
+            return getString(R.string.main_normal_weight);
         }
         if(s.equals("OVERWWEIGHT")){
-            return "Overweight";
+            return getString(R.string.main_overweight);
         }
         if(s.equals("OBESITY_GRADE_1")){
-            return "Obesity grade 1";
+            return getString(R.string.main_obesity_grade1);
         }
         if(s.equals("OBESITY_GRADE_2")){
-            return "Obesity grade 2";
+            return getString(R.string.main_obesity_grade2);
         }
         else{
-            return "Obesity grade 3";
+            return getString(R.string.main_obesity_grade3);
         }
     }
 

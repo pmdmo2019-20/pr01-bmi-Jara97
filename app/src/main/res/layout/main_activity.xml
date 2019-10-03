@@ -20,7 +20,7 @@
     <EditText
         android:id="@+id/txtWeight"
         android:layout_width="match_parent"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:hint="@string/kg"
         android:layout_height="wrap_content" />
     <TextView
@@ -42,30 +42,34 @@
         android:layout_marginTop="20dp"
         android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/btnReset"
-        android:layout_width="155dp"
-        android:layout_height="wrap_content"
-        android:text="@string/reset"></Button>
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"></Button>
 
-    <Button
-        android:id="@+id/btnCalculate"
-        android:layout_width="155dp"
-        android:layout_height="wrap_content"
-        android:text="@string/calculate"></Button>
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate"></Button>
     </LinearLayout>
     <TextView
         android:id="@+id/lblResult"
         android:layout_width="match_parent"
         android:inputType="numberDecimal"
+        android:textSize="@dimen/TamLetra"
+        android:textAlignment="center"
         android:layout_height="wrap_content">
 
     </TextView>
 
     <ImageView
         android:id="@+id/imgBmi"
-        android:layout_width="299dp"
-        android:layout_height="174dp"
+        android:layout_width="348dp"
+        android:layout_height="183dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="75dp"
         android:scaleType="centerCrop"

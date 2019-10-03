@@ -8,8 +8,13 @@
     <string name="reset">Reset</string>
     <string name="main_invalid_weight">invalid weight</string>
     <string name="main_invalid_height">invalid height</string>
-    <string name="main_bmi">Normal weight</string>
+    <string name="main_bmi">BMI: %s %s</string>
+    <string name="main_normal_weight">Normal weight</string>
     <string name="main_overweight">Overweight</string>
+    <string name="main_low_weight">Low weight</string>
+    <string name="main_obesity_grade1">Obesity grade 1</string>
+    <string name="main_obesity_grade2">Obesity grade 2</string>
+    <string name="main_obesity_grade3">Obesity grade 3</string>
 
     <!-- TODO -->
 </resources>
